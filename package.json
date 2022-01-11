@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/eyp57/minecraft-sunucu-botu/issues"
   },
-  "homepage": "https://github.com/eyp57/minecraft-sunucu-botu#readme"
+  "homepage": "https://github.com/eyp57/minecraft-sunucu-botu#readme",
+  "dependencies": {
+    "discord.js": "^13.5.1",
+    "fs": "^0.0.1-security",
+    "node-fetch": "2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
 }
