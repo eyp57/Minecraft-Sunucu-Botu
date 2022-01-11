@@ -1,10 +1,12 @@
 {
-    "token": "ODA3NTQ3MDg1MDE1N32312321.YB5k132.nYVzexpu-BaKşUaNTokEniBuLdUn",
+    "token": "ODA3NTQ3MDg1MDE1NzQ0NTY0.YB5k1A.nYVzexpu-yRp_XPzuSKMkxFN648",
     "prefix": "!",
     "sahip": ["787043042569355265"],
+    "durum": "{online} kişi Arokami'de",
     "minecraft": {
         "serverName": "Arokami",
         "serverIP": "Play.Arokami.Net",
-        "serverVersion": "1.8"
+        "serverVersion": "1.8",
+        "serverWebSite": "https://arokami.net"
     }
 }

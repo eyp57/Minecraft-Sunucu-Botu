@@ -11,7 +11,6 @@ module.exports = new Command({
 
         let ip = ayarlar.minecraft.serverIP;
         let serverStatus = await fetch(`https://mcapi.tc/?${ip}/json`, {method: "GET"}).then(res => res.json());
-        console.log(serverStatus)
         const embed = new MessageEmbed({
             title: ayarlar.minecraft.serverName + " Sunucu durumu",
             author: {

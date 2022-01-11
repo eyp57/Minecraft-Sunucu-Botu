@@ -22,6 +22,7 @@ const client = new Client({
 })
 const commands = new Collection();
 const ayarlar = require("./ayarlar.json");
+const {default: fetch} = require("node-fetch");
 
 module.exports = {
     client,
@@ -60,3 +61,27 @@ fs.readdir("./src/events", function(err, files) {
 
 client.login(ayarlar.token);
 
+/** 
+ * Version Checker from Github :)
+ * @author eyp57
+ */
+
+let packageJson = require("./package.json");
+
+setTimeout(() => {
+    checkUpdate();
+}, 1250);
+
+const checkUpdate = async() => {
+    let githubPackageJson = await fetch("https://raw.githubusercontent.com/eyp57/Minecraft-Sunucu-Botu/master/package.json").then(res => res.json());
+
+    console.log("-_-_-_- Update Checker -_-_-_-")
+
+    if(githubPackageJson['version'] !== packageJson['version']) {
+        console.log("The version you use is up to date please update the Bot to the newest version");
+        console.log("Your version: " + packageJson['version']);
+        console.log("New version: " + githubPackageJson['version']);
+    } else {
+        console.log("Your using the latest version.");
+    }
+}
