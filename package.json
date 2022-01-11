@@ -1,0 +1,26 @@
+{
+  "name": "minecraft-sunucu-botu",
+  "version": "0.0.1",
+  "description": "Eyyüp Gülen <3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyp57/minecraft-sunucu-botu.git"
+  },
+  "keywords": [
+    "Eyyüp",
+    "Gülen",
+    "zRooter",
+    "eyp57",
+    "eyyüp."
+  ],
+  "author": "zRooter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eyp57/minecraft-sunucu-botu/issues"
+  },
+  "homepage": "https://github.com/eyp57/minecraft-sunucu-botu#readme"
+}
