@@ -59,3 +59,4 @@ fs.readdir("./src/events", function(err, files) {
 });
 
 client.login(ayarlar.token);
+
