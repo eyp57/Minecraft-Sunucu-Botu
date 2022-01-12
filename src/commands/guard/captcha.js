@@ -78,6 +78,7 @@ module.exports = new Command({
 
             component.on('collect', (interaction) => {
                 if(interaction.customId == captcha[captchadata].getValue()) {
+                    message.member.roles.add(ayarlar.roles.captchaVerified);
                     interaction.reply({
                         content: "Başarıyla doğrulandınız. Verilen rol: <@&"+ayarlar.roles.captchaVerified+">",
                         ephemeral: true
