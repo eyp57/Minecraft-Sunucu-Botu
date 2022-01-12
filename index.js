@@ -80,7 +80,7 @@ const checkUpdate = async() => {
     console.log("-_-_-_- Update Checker -_-_-_-")
 
     if(githubPackageJson['version'] !== packageJson['version']) {
-        console.log("The version you use is up to date please update the Bot to the newest version");
+        console.log("The version you use is not up to date please update the Bot to the newest version");
         console.log("Your version: " + packageJson['version']);
         console.log("New version: " + githubPackageJson['version']);
     } else {
