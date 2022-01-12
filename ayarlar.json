@@ -1,5 +1,5 @@
 {
-    "token": "ODA3NTQ3MDg1MDE1NzQ0NTY0.YB5k1A.8Vbpf19PVfNEDWZqQYKyaFiQcU4",
+    "token": "ODA3NTQ3MDg1MDE1NzQ0NTY0.YB5k1A.QQArPXAA-LtHdzkjrXRhI38ULZk",
     "prefix": "!",
     "sahip": ["787043042569355265"],
     "durum": "{online} kişi Arokami'de",
@@ -14,5 +14,12 @@
     },
     "roles": {
         "captchaVerified": "914475616638730240"
+    },
+    "rcon": {
+        "enabled": true,
+        "host": "localhost",
+        "port": 25575,
+        "password": "123123",
+        "webPort": "80"
     }
 }

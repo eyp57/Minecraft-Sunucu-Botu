@@ -2,7 +2,6 @@ const { ayarlar } = require("./../../index");
 const {Event} = require("../typings/Event");
 const { default: fetch } = require("node-fetch");
 const { Client } = require("discord.js");
-
 module.exports = new Event({
     event: "ready",
     /**
@@ -11,9 +10,9 @@ module.exports = new Event({
      */
     run: async(client) => {
         console.log(client.user.username + " adına giriş yaptım.")
-
+        
         let statusText = ayarlar.durum;
-
+        require("../rcon/RconWeb");
         if(statusText.includes("{online}")) {
             let ip = ayarlar.minecraft.serverIP;
             setInterval(async() => {

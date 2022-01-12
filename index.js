@@ -2,6 +2,7 @@
 
 const { Client, Collection } = require("discord.js");
 const fs = require("fs");
+const { RconClient } = require("./src/rcon/RconClient");
 const client = new Client({
     intents: [
         "GUILDS",
@@ -23,13 +24,19 @@ const client = new Client({
 const commands = new Collection();
 const ayarlar = require("./ayarlar.json");
 const {default: fetch} = require("node-fetch");
-const captchaDatas = new Map();
-
+let rcon;
+if(ayarlar.rcon.enabled) {
+    rcon = new RconClient({
+        host: ayarlar.rcon.host,
+        password: ayarlar.rcon.password,
+        port: ayarlar.rcon.port
+    })
+}
 module.exports = {
     client,
     ayarlar,
     commands,
-    captchaDatas
+    rcon
 }
 
 // Command & Event handler
