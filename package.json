@@ -1,6 +1,6 @@
 {
   "name": "minecraft-sunucu-botu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Eyyüp Gülen <3",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/eyp57/minecraft-sunucu-botu#readme",
   "dependencies": {
+    "@eyp57tr/captchajs": "^1.0.0",
     "discord.js": "^13.5.1",
     "fs": "^0.0.1-security",
     "node-fetch": "2.0"

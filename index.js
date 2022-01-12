@@ -23,11 +23,13 @@ const client = new Client({
 const commands = new Collection();
 const ayarlar = require("./ayarlar.json");
 const {default: fetch} = require("node-fetch");
+const captchaDatas = new Map();
 
 module.exports = {
     client,
     ayarlar,
-    commands
+    commands,
+    captchaDatas
 }
 
 // Command & Event handler
